@@ -5,8 +5,11 @@ export default class TodoList extends Component {
     render() {
         return (
             <div>
-                <h1>Hello List</h1>
-                <TodoItem />
+                <ul className="list-group my-5">
+                    <h3 className="text-capitalize text-cnter">Todo List</h3>
+                    <TodoItem />
+                    <button type="button" className="btn btn-danger btn-block text-capitalize">Clear List</button>
+                </ul>
             </div>
         )
     }
